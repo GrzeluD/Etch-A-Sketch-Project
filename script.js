@@ -26,8 +26,8 @@ function sketchSize() {
             let newPixel = document.createElement('div');
             newPixel.classList.add('pixel');
             sketch.appendChild(newPixel);
-            draw();
         }
+        draw();
     }
 }
 
