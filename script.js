@@ -1,3 +1,6 @@
+document.getElementById("padSize").addEventListener("keydown", function(e) {
+    if (e.keyCode == 13) { sketchSize(); }
+}, false);
 
 function sketchSize() {
     

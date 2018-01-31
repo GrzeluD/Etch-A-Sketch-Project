@@ -22,7 +22,7 @@ html {
 }
 
 .pixel {
-    transition: All .5s;
+    transition: All .3s;
     margin: 0;
     padding: 0;
     background: #ffffff;
