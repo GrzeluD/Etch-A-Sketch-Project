@@ -1,8 +1,7 @@
 
 function sketchSize() {
     
-    let squares = Array.from(document.querySelectorAll(".sketch-pad > *"));
-    squares.forEach(cell => sketch.removeChild(cell));
+    clearPad();
     
     let inputNumber = document.getElementById("padSize").value;
     
@@ -24,15 +23,23 @@ function sketchSize() {
             let newPixel = document.createElement('div');
             newPixel.classList.add('pixel');
             sketch.appendChild(newPixel);
-             
-            let allPixels = document.querySelectorAll('.pixel');
-            allPixels.forEach(pixel => {
-                pixel.addEventListener('mouseover', function(event) {
-                    event.target.style.background = "#000000";
-                })
-            })
-        } 
+            draw();
+        }
     }
 }
 
+function clearPad() {
+    let squares = Array.from(document.querySelectorAll(".sketch-pad > *"));
+    squares.forEach(square => sketch.removeChild(square));
+}
+
+function draw(){
+    let allPixels = document.querySelectorAll('.pixel');
+    allPixels.forEach(pixel => {
+        pixel.addEventListener('mouseover', function(event) {
+        let color = document.getElementById('color').value;
+        event.target.style.background = color;
+        });
+    });
+}
 sketchSize(16);
