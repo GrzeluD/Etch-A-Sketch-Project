@@ -1,0 +1,41 @@
+html {
+    font-family: 'Kranky', cursive;
+    color: #1d355b;
+}
+
+.title {
+    text-align: center;
+}
+
+.inputs {
+    text-align: center;
+}
+
+.sketch-pad {
+    width: 60%;
+    height: 700px;
+    margin:30px auto;
+    display: grid;
+    border: 2px solid black;
+    padding: 5px;
+    background: #1d355b
+}
+
+.pixel {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    border: 1px solid #1d355b;
+    display: inline-block;
+}
+
+button {
+    font-family: 'Kranky', cursive;
+    font-size: 15px;
+    color: #1d355b;
+    border: none;
+}
+
+span {
+    font-size: 20px;
+}

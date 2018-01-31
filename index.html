@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etch A Sketch</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Echt a Sketch</h1>
+            <h2>The Odin Project</h2>
+        </div>
+        <div class="inputs">
+            <label for="padSize"><span>How big your sketch pad shoudl be?(Type between 16 - 64) :</span></label>
+            <input type="text" id="padSize" name="pad size input" placeholder="16 - 64" value="16">
+            <button class="startBtn" onclick="sketchSize()">Start</button><br>
+            <label for="color"><span>Choose your color: </span></label>
+            <input id="color" type="color" name="color" value="#000000">
+        </div>
+        
+        
+        <div id="sketch" class="sketch-pad"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
