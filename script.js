@@ -41,5 +41,5 @@ function draw(){
         event.target.style.background = color;
         });
     });
-}
+} 
 sketchSize(16);
