@@ -22,11 +22,16 @@ html {
 }
 
 .pixel {
+    transition: All .5s;
     margin: 0;
     padding: 0;
     background: #ffffff;
     border: 1px solid #1d355b;
     display: inline-block;
+}
+
+.pixel:hover {
+    cursor: crosshair;
 }
 
 button {
