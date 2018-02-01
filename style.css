@@ -3,6 +3,10 @@ html {
     color: #1d355b;
 }
 
+body {
+    background: linear-gradient(to right, rgb(162, 189, 229), rgb(229, 239, 255));
+}
+
 .title {
     text-align: center;
 }
@@ -18,7 +22,9 @@ html {
     display: grid;
     border: 2px solid black;
     padding: 5px;
-    background: #1d355b
+    background: #1d355b;
+    border-radius: 10px;
+    box-shadow: 15px 15px 100px;
 }
 
 .pixel {
@@ -35,14 +41,33 @@ html {
 }
 
 button {
+    font-weight:  bold;
+    transition: All 0.2s;
+    position: relative;
     font-family: 'Kranky', cursive;
     font-size: 15px;
     color: #1d355b;
     border: none;
+    background: #b5c7e2;
+    padding: 4px 10px;;
+    border: 3px solid #1d355b;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.5 !important;
+    top: 1px;
 }
 
 span {
     font-size: 20px;
+    font-weight:  bold;
 }
 
 #clear {
